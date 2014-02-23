@@ -1,0 +1,19 @@
+environment:   
+    # String Example
+    stringVariable1Type01: String variable value
+    stringVariable2Type01: "String variable value"
+    
+    # Dictonary Examples
+    dictonaryVariableType01:
+        dicItem1: "dictonary item 1"
+        dicItem2: "dictonary item 2"
+        dicItem3: "dictonary item 3"
+                       
+    dictonaryVariableSingleType01:
+        1: "dictonary item 1"
+    
+    # List Example
+    listVariablesType01:
+        - listItem
+        - listItem
+        - listItem

@@ -1,0 +1,10 @@
+testLevelString1: "test string"
+testLevelString2: test string
+testLevelInt: 10
+testLevelList:
+    - listItem
+    - listItem
+    - listItem
+testLevelVarConversion: ${suiteGlobalVariableTestString}
+testLevelStringValue: "Get Data String Return Value"
+testLevelListValue: "Get Data List Return Value"

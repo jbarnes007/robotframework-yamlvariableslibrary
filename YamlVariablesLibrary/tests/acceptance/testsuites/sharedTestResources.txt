@@ -1,0 +1,66 @@
+*** Keywords ***
+Env Type01 Common Tests
+    Should Be Equal As Strings    ${stringVariable1Type01}    String variable value
+    Should Be Equal As Strings    ${stringVariable2Type01}    String variable value
+    Should Be Equal As Strings    ${dictonaryVariableType01['dicItem1']}    dictonary item 1
+    Should Be Equal As Strings    ${dictonaryVariableType01['dicItem2']}    dictonary item 2
+    Should Be Equal As Strings    ${dictonaryVariableType01['dicItem3']}    dictonary item 3
+    Should Be Equal As Strings    ${dictonaryVariableSingleType01[1]}    dictonary item 1
+    Length Should Be    ${listVariablesType01}    3
+    : FOR    ${item}    IN    @{listVariablesType01}
+    \    Should Be Equal As Strings    ${item}    listItem
+
+Env Type02 Common Tests
+    Should Be Equal As Strings    ${stringVariable1Type02}    String variable value
+    Should Be Equal As Strings    ${stringVariable2Type02}    String variable value
+    Should Be Equal As Strings    ${dictonaryVariableType02['dicItem1']}    dictonary item 1
+    Should Be Equal As Strings    ${dictonaryVariableType02['dicItem2']}    dictonary item 2
+    Should Be Equal As Strings    ${dictonaryVariableType02['dicItem3']}    dictonary item 3
+    Should Be Equal As Strings    ${dictonaryVariableSingleType02[1]}    dictonary item 1
+    Length Should Be    ${listVariablesType02}    3
+    : FOR    ${item}    IN    @{listVariablesType02}
+    \    Should Be Equal As Strings    ${item}    listItem
+
+Get Data String Return Value
+    ${returnValue} =    Set Variable    Return Value Test
+    [Return]    ${returnValue}
+
+Get Data List Return Value
+    ${returnValue} =    Create List    listItem    listItem    listItem
+    [Return]    ${returnValue}
+
+Service Data Test
+    ${TEST_DATA}=    Create Dictionary    testValue1    Test Value 1
+    Set To Dictionary    ${TEST_DATA}    testValue2    Test Value 2
+    Set To Dictionary    ${TEST_DATA}    testValue3    Test Value 3
+    Set To Dictionary    ${TEST_DATA}    suiteLevelString1    Should not be updated
+    [Return]    ${TEST_DATA}
+
+Service Data Test 1 Input
+    [Arguments]    ${input1}
+    ${TEST_DATA}=    Create Dictionary    test1Value1    ${input1}
+    Set To Dictionary    ${TEST_DATA}    test1Value2    Test Value 2
+    Set To Dictionary    ${TEST_DATA}    test1Value3    Test Value 3
+    [Return]    ${TEST_DATA}
+
+Service Data Test 2 Inputs
+    [Arguments]    ${input1}    ${input2}
+    ${TEST_DATA}=    Create Dictionary    test2Value1    ${input1}
+    Set To Dictionary    ${TEST_DATA}    test2Value2    ${input2}
+    Set To Dictionary    ${TEST_DATA}    test2Value3    Test Value 3
+    [Return]    ${TEST_DATA}
+
+Service Data Test 3 Inputs
+    [Arguments]    ${input1}    ${input2}    ${input3}
+    ${TEST_DATA}=    Create Dictionary    test3Value1    ${input1}
+    Set To Dictionary    ${TEST_DATA}    test3Value2    ${input2}
+    Set To Dictionary    ${TEST_DATA}    test3Value3    ${input3}
+    [Return]    ${TEST_DATA}
+
+Multi Env Server Name Tests
+    Should Be Equal As Strings    ${applicationGroup1Type02[0]}    applicationGroup1Server2.local.lan
+    Should Be Equal As Strings    ${applicationGroup1Type02[1]}    applicationGroup1Server1.local.lan
+    Should Be Equal As Strings    ${applicationGroup2Type02[0]}    applicationGroup1Server3.local.lan
+    Should Be Equal As Strings    ${applicationGroup1Type01[0]}    applicationGroup1Server2.local.lan
+    Should Be Equal As Strings    ${applicationGroup1Type01[1]}    applicationGroup1Server1.local.lan
+    Should Be Equal As Strings    ${applicationGroup2Type01[0]}    applicationGroup1Server3.local.lan

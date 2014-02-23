@@ -1,0 +1,28 @@
+environment:   
+    # String Example
+    stringVariable1Type02: String variable value
+    stringVariable2Type02: "String variable value"
+    
+    # Dictonary Examples
+    dictonaryVariableType02:
+        dicItem1: "dictonary item 1"
+        dicItem2: "dictonary item 2"
+        dicItem3: "dictonary item 3"
+                       
+    dictonaryVariableSingleType02:
+        1: "dictonary item 1"
+    
+    # List Example
+    listVariablesType02:
+        - listItem
+        - listItem
+        - listItem
+
+applicationGroups:
+    applicationGroup1Type02:
+        servers:
+            applicationGroup1Server1.local.lan:
+            applicationGroup1Server2.local.lan:
+    applicationGroup2Type02:
+        servers:
+            applicationGroup1Server3.local.lan:

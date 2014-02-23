@@ -1,0 +1,5 @@
+*** Settings ***
+Variables         env.py
+Library           YamlVariablesLibrary    ${ROOT_DIR}    ${ENVIRONMENT_RESOURCES_DIR}
+Library           Collections
+Resource          ../testsuites/sharedTestResources.txt

@@ -1,0 +1,15 @@
+*** Settings ***
+Suite Setup       setup
+Test Setup        setup
+Resource          ../resources/globalInclude.txt
+
+*** Test Cases ***
+envLevel002-TC1: Env Level Tests
+    Env Type01 Common Tests
+    Env Type02 Common Tests
+    Multi Env Server Name Tests
+
+*** Keywords ***
+setup
+    ${ENV} =    Set Variable    ${multiEnv}
+    Get Data    ${ENV}

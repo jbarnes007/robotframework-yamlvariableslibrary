@@ -1,0 +1,51 @@
+*** Settings ***
+Suite Setup       Get Data
+Test Setup        Get Data
+Resource          ../resources/globalInclude.txt
+
+*** Test Cases ***
+envLevel005-TC1: Suite Level Tests
+    Should Be Equal As Strings    ${suiteLevelString1}    test string
+    Should Be Equal As Strings    ${suiteLevelString2}    test string
+    Should Be Equal As Strings    ${suiteLevelString3}    test string
+    Should Be Equal As Integers    ${suiteLevelInt}    10
+    Length Should Be    ${suiteLevelList}    3
+    : FOR    ${item}    IN    @{suiteLevelList}
+    \    Should Be Equal As Strings    ${item}    listItem
+    Should Be Equal As Strings    ${suiteLevelVarConversion}    This string is defined in the env.py file.
+    Should Be Equal As Strings    ${suiteLevelStringValue}    Return Value Test
+    Length Should Be    ${suiteLevelListValue}    3
+    : FOR    ${item}    IN    @{suiteLevelListValue}
+    \    Should Be Equal As Strings    ${item}    listItem
+
+envLevel005-TC2: Test Level Tests
+    Should Be Equal As Strings    ${testLevelString1}    test string
+    Should Be Equal As Strings    ${testLevelString2}    test string
+    Should Be Equal As Integers    ${testLevelInt}    10
+    Length Should Be    ${testLevelList}    3
+    : FOR    ${item}    IN    @{testLevelList}
+    \    Should Be Equal As Strings    ${item}    listItem
+    Should Be Equal As Strings    ${testLevelVarConversion}    This string is defined in the env.py file.
+    Should Be Equal As Strings    ${testLevelStringValue}    Return Value Test
+    Length Should Be    ${testLevelListValue}    3
+    : FOR    ${item}    IN    @{testLevelListValue}
+    \    Should Be Equal As Strings    ${item}    listItem
+
+envLevel005-TC3: Service Data Level Tests
+    Get Data Service    Service Data Test
+    Should Be Equal As Strings    ${testValue1}    Test Value 1
+    Should Be Equal As Strings    ${testValue2}    Test Value 2
+    Should Be Equal As Strings    ${testValue3}    Test Value 3
+    Should Be Equal As Strings    ${suiteLevelString1}    test string
+    Get Data Service    Service Data Test 1 Input | Return Value 1
+    Should Be Equal As Strings    ${test1Value1}    Return Value 1
+    Should Be Equal As Strings    ${test1Value2}    Test Value 2
+    Should Be Equal As Strings    ${test1Value3}    Test Value 3
+    Get Data Service    Service Data Test 2 Inputs | Return Value 1 | Return Value 2
+    Should Be Equal As Strings    ${test2Value1}    Return Value 1
+    Should Be Equal As Strings    ${test2Value2}    Return Value 2
+    Should Be Equal As Strings    ${test2Value3}    Test Value 3
+    Get Data Service    Service Data Test 3 Inputs | Return Value 1 | Return Value 2 | Return Value 3
+    Should Be Equal As Strings    ${test3Value1}    Return Value 1
+    Should Be Equal As Strings    ${test3Value2}    Return Value 2
+    Should Be Equal As Strings    ${test3Value3}    Return Value 3
