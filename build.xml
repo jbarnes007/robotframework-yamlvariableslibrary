@@ -1,11 +1,10 @@
-<project name="Acceptance Test RobotFramework YAML Library" basedir="." default="build">
-
-	<property name="acceptance.test.path" value="${basedir}/YamlVariablesLibrary/tests/acceptance/testsuites/"/>
+<project name="Acceptance Test RobotFramework YAML Library" basedir="." default="build"> 
+ <property name="acceptance.test.path" value="${basedir}/YamlVariablesLibrary/tests/acceptance/testsuites/"/>
  	<property name="library.path" value="../../../../"/>  <!--_Keyword file path from globalinclude.txt-->
 	<target name="build" description="Perform Acceptance Test">
   		<echo>Acceptance Test Start</echo>
-    	<exec dir="${acceptance.test.path}" executable="pybot" failonerror="true">	
-    		<arg line="-P ${library.path} ${acceptance.test.path}" />
+    	<exec dir="${acceptance.test.path}" executable="/usr/local/bin/python2.7" failonerror="true">
+    		<arg line="-m robot.run -P ${library.path} ${acceptance.test.path}" />
 		</exec>
 		<echo>Acceptance Test End</echo>
   </target>
