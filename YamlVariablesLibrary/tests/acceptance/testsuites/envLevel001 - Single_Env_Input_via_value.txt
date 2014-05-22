@@ -8,6 +8,7 @@ envLevel001-TC1: Env Level Tests
     Env Type01 Common Tests
 
 envLevel001-TC2: Suite Level Tests
+    Log    ${CURDIR}
     Should Be Equal As Strings    ${suiteLevelString1}    test string
     Should Be Equal As Strings    ${suiteLevelString2}    test string
     Should Be Equal As Strings    ${suiteLevelString3}    test string
