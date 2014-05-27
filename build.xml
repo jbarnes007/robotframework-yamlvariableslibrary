@@ -3,7 +3,7 @@
  	<property name="library.path" value="../../../../"/>  <!--_Keyword file path from globalinclude.txt-->
 	<target name="build" description="Perform Acceptance Test">
   		<echo>Acceptance Test Start</echo>
-    	<exec dir="${acceptance.test.path}" executable="/usr/local/bin/python2.7" failonerror="true">
+    	<exec dir="${acceptance.test.path}" executable="${python.executable}" failonerror="true">
     		<arg line="-m robot.run -P ${library.path} ${acceptance.test.path}" />
 		</exec>
 		<echo>Acceptance Test End</echo>
