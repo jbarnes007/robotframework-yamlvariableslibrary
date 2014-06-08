@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140428 15:08:16.186" generator="Rebot 2.8.4 (Python 2.7.5 on darwin)">
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites" id="s1" name="Testsuites">
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites/envLevel001 - Single_Env_Input_via_value.txt" id="s1-s1" name="envLevel001 - Single Env Input via value">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.308" starttime="20140428 14:57:11.304"></status>
+</kw>
+<test id="s1-s1-t1" name="envLevel001-TC1: Env Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.309" level="INFO">/envLevel001-TC1</msg>
+<status status="PASS" endtime="20140428 14:57:11.310" starttime="20140428 14:57:11.309"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type01 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.310" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.310" starttime="20140428 14:57:11.310"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.311" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.311" starttime="20140428 14:57:11.310"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.311" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.311" starttime="20140428 14:57:11.311"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.312" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.312" starttime="20140428 14:57:11.311"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.312" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.312" starttime="20140428 14:57:11.312"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType01[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.312" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.312" starttime="20140428 14:57:11.312"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType01}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.313" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.313" starttime="20140428 14:57:11.313"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType01} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.313" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.313" starttime="20140428 14:57:11.313"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.313" starttime="20140428 14:57:11.313"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.314" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.313"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.313"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.314" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.314"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.314"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.313"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.314" starttime="20140428 14:57:11.310"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140428 14:57:11.314" critical="yes" starttime="20140428 14:57:11.309"></status>
+</test>
+<test id="s1-s1-t2" name="envLevel001-TC2: Suite Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.316" level="INFO">/envLevel001-TC2</msg>
+<status status="PASS" endtime="20140428 14:57:11.316" starttime="20140428 14:57:11.315"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${suiteLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.316" level="FAIL">Non-existing variable '${suiteLevelString1}'.</msg>
+<status status="FAIL" endtime="20140428 14:57:11.316" starttime="20140428 14:57:11.316"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.316" critical="yes" starttime="20140428 14:57:11.315">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Non-existing variable '${suiteLevelString1}'.</status>
+</test>
+<test id="s1-s1-t3" name="envLevel001-TC3: Test Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.317" level="INFO">/envLevel001-TC3</msg>
+<status status="PASS" endtime="20140428 14:57:11.317" starttime="20140428 14:57:11.317"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.318" level="FAIL">Non-existing variable '${testLevelString1}'.</msg>
+<status status="FAIL" endtime="20140428 14:57:11.318" starttime="20140428 14:57:11.318"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.318" critical="yes" starttime="20140428 14:57:11.316">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Non-existing variable '${testLevelString1}'.</status>
+</test>
+<test id="s1-s1-t4" name="envLevel001-TC3: Service Data Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.319" level="INFO">/envLevel001-TC3</msg>
+<status status="PASS" endtime="20140428 14:57:11.319" starttime="20140428 14:57:11.319"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data Service">
+<doc></doc>
+<arguments>
+<arg>Service Data Test</arg>
+</arguments>
+<kw type="kw" name="BuiltIn.Keyword Should Exist">
+<doc>Fails unless the given keyword exists in the current scope.</doc>
+<arguments>
+<arg>Service Data Test</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.320" starttime="20140428 14:57:11.320"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Service Data Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${TEST_DATA} = Collections.Create Dictionary">
+<doc>Creates and returns a dictionary based on given items.</doc>
+<arguments>
+<arg>testValue1</arg>
+<arg>Test Value 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.320" level="INFO">${TEST_DATA} = {u'testValue1': u'Test Value 1'}</msg>
+<status status="PASS" endtime="20140428 14:57:11.320" starttime="20140428 14:57:11.320"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>testValue2</arg>
+<arg>Test Value 2</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.321" starttime="20140428 14:57:11.321"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>testValue3</arg>
+<arg>Test Value 3</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.321" starttime="20140428 14:57:11.321"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>suiteLevelString1</arg>
+<arg>Should not be updated</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.321" starttime="20140428 14:57:11.321"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.321" starttime="20140428 14:57:11.320"></status>
+</kw>
+<msg timestamp="20140428 14:57:11.322" level="INFO">${suiteLevelString1} = Should not be updated</msg>
+<msg timestamp="20140428 14:57:11.322" level="INFO">${testValue3} = Test Value 3</msg>
+<msg timestamp="20140428 14:57:11.322" level="INFO">${testValue2} = Test Value 2</msg>
+<msg timestamp="20140428 14:57:11.322" level="INFO">${testValue1} = Test Value 1</msg>
+<msg timestamp="20140428 14:57:11.322" level="INFO">[u'Service Data Test']</msg>
+<status status="PASS" endtime="20140428 14:57:11.322" starttime="20140428 14:57:11.319"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue1}</arg>
+<arg>Test Value 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.323" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.323" starttime="20140428 14:57:11.323"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue2}</arg>
+<arg>Test Value 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.323" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.323" starttime="20140428 14:57:11.323"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue3}</arg>
+<arg>Test Value 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.323" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.324" starttime="20140428 14:57:11.323"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${suiteLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.324" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20140428 14:57:11.328" level="FAIL">Should not be updated != test string</msg>
+<msg timestamp="20140428 14:57:11.328" level="DEBUG">Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/robot/libraries/BuiltIn.py", line 648, in should_be_equal_as_strings
+    self._should_be_equal(first, second, msg, values)
+  File "/Library/Python/2.7/site-packages/robot/libraries/BuiltIn.py", line 512, in _should_be_equal
+    self._include_values(values))
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 181, in fail_unless_equal
+    _report_unequality_failure(first, second, msg, values, '!=')
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 244, in _report_unequality_failure
+    _report_failure(msg)
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 230, in _report_failure
+    raise AssertionError(msg)</msg>
+<status status="FAIL" endtime="20140428 14:57:11.328" starttime="20140428 14:57:11.324"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.328" critical="yes" starttime="20140428 14:57:11.318">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Should not be updated != test string</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140428 14:57:11.328" starttime="20140428 14:57:11.241"></status>
+</suite>
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites/envLevel002_-_Single_Env_Input_via_variable_value.txt" id="s1-s2" name="envLevel002 - Single Env Input via variable value">
+<kw type="setup" name="setup">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${ENV} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.333" level="INFO">${ENV} = TestEnv02Type01</msg>
+<status status="PASS" endtime="20140428 14:57:11.333" starttime="20140428 14:57:11.333"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${ENV}</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.337" starttime="20140428 14:57:11.334"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.337" starttime="20140428 14:57:11.333"></status>
+</kw>
+<test id="s1-s2-t1" name="envLevel002-TC1: Env Level Tests">
+<kw type="setup" name="setup">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${ENV} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${singleEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.338" level="INFO">${ENV} = TestEnv02Type01</msg>
+<status status="PASS" endtime="20140428 14:57:11.338" starttime="20140428 14:57:11.338"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${ENV}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.339" level="INFO">/envLevel002-TC1</msg>
+<status status="PASS" endtime="20140428 14:57:11.339" starttime="20140428 14:57:11.338"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.339" starttime="20140428 14:57:11.337"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type01 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.340" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.340" starttime="20140428 14:57:11.339"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.340" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.340" starttime="20140428 14:57:11.340"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.340" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.341" starttime="20140428 14:57:11.340"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.341" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.341" starttime="20140428 14:57:11.341"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.341" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.341" starttime="20140428 14:57:11.341"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType01[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.342" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.342" starttime="20140428 14:57:11.342"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType01}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.342" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.342" starttime="20140428 14:57:11.342"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType01} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.343" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.343" starttime="20140428 14:57:11.343"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.343" starttime="20140428 14:57:11.342"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.343" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.343" starttime="20140428 14:57:11.343"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.343" starttime="20140428 14:57:11.343"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.344" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.344" starttime="20140428 14:57:11.343"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.344" starttime="20140428 14:57:11.343"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.344" starttime="20140428 14:57:11.342"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.344" starttime="20140428 14:57:11.339"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140428 14:57:11.344" critical="yes" starttime="20140428 14:57:11.337"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140428 14:57:11.344" starttime="20140428 14:57:11.329"></status>
+</suite>
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites/envLevel003_-_Multi_Env_Input_via_value.txt" id="s1-s3" name="envLevel003 - Multi Env Input via value">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${multiEnv}</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.359" starttime="20140428 14:57:11.349"></status>
+</kw>
+<test id="s1-s3-t1" name="envLevel003-TC1: Env Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${multiEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.361" level="INFO">/envLevel003-TC1</msg>
+<status status="PASS" endtime="20140428 14:57:11.361" starttime="20140428 14:57:11.360"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type01 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.362" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.362" starttime="20140428 14:57:11.362"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.362" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.362" starttime="20140428 14:57:11.362"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.363" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.363" starttime="20140428 14:57:11.362"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.363" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.363" starttime="20140428 14:57:11.363"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.364" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.364" starttime="20140428 14:57:11.363"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType01[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.364" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.364" starttime="20140428 14:57:11.364"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType01}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.365" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.365" starttime="20140428 14:57:11.364"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType01} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.365" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.365" starttime="20140428 14:57:11.365"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.365" starttime="20140428 14:57:11.365"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.365" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.365" starttime="20140428 14:57:11.365"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.366" starttime="20140428 14:57:11.365"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.366" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.366" starttime="20140428 14:57:11.366"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.366" starttime="20140428 14:57:11.366"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.366" starttime="20140428 14:57:11.365"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.366" starttime="20140428 14:57:11.361"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type02 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type02}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.367" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.367" starttime="20140428 14:57:11.367"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type02}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.367" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.367" starttime="20140428 14:57:11.367"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.368" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.368" starttime="20140428 14:57:11.368"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.368" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.368" starttime="20140428 14:57:11.368"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.369" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.369" starttime="20140428 14:57:11.368"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType02[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.369" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.369" starttime="20140428 14:57:11.369"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType02}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.370" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.370" starttime="20140428 14:57:11.369"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType02} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.370" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.370" starttime="20140428 14:57:11.370"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.370" starttime="20140428 14:57:11.370"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.370" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.370"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.370"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.371" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.371"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.371"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.370"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.371" starttime="20140428 14:57:11.366"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Multi Env Server Name Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type02[0]}</arg>
+<arg>applicationGroup1Server2.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.372" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.372" starttime="20140428 14:57:11.372"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type02[1]}</arg>
+<arg>applicationGroup1Server1.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.373" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.373" starttime="20140428 14:57:11.372"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup2Type02[0]}</arg>
+<arg>applicationGroup1Server3.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.373" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.373" starttime="20140428 14:57:11.373"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type01[0]}</arg>
+<arg>applicationGroup1Server2.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.373" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.373" starttime="20140428 14:57:11.373"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type01[1]}</arg>
+<arg>applicationGroup1Server1.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.374" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.374" starttime="20140428 14:57:11.374"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup2Type01[0]}</arg>
+<arg>applicationGroup1Server3.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.374" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.374" starttime="20140428 14:57:11.374"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.374" starttime="20140428 14:57:11.371"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140428 14:57:11.375" critical="yes" starttime="20140428 14:57:11.359"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140428 14:57:11.375" starttime="20140428 14:57:11.345"></status>
+</suite>
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites/envLevel004_-_Multi_Env_Input_via_variable_value.txt" id="s1-s4" name="envLevel004 - Multi Env Input via variable value">
+<kw type="setup" name="setup">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${ENV} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${multiEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.381" level="INFO">${ENV} = TestEnv01Type01:TestEnv01Type02</msg>
+<status status="PASS" endtime="20140428 14:57:11.381" starttime="20140428 14:57:11.380"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${ENV}</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.390" starttime="20140428 14:57:11.381"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.390" starttime="20140428 14:57:11.379"></status>
+</kw>
+<test id="s1-s4-t1" name="envLevel002-TC1: Env Level Tests">
+<kw type="setup" name="setup">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${ENV} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${multiEnv}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.392" level="INFO">${ENV} = TestEnv01Type01:TestEnv01Type02</msg>
+<status status="PASS" endtime="20140428 14:57:11.392" starttime="20140428 14:57:11.392"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+<arg>${ENV}</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.392" level="INFO">/envLevel002-TC1</msg>
+<status status="PASS" endtime="20140428 14:57:11.392" starttime="20140428 14:57:11.392"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.392" starttime="20140428 14:57:11.391"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type01 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.393" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.393" starttime="20140428 14:57:11.393"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type01}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.394" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.394" starttime="20140428 14:57:11.393"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.394" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.394" starttime="20140428 14:57:11.394"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.395" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.395" starttime="20140428 14:57:11.394"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType01['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.395" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.395" starttime="20140428 14:57:11.395"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType01[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.396" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.396" starttime="20140428 14:57:11.395"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType01}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.396" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.396" starttime="20140428 14:57:11.396"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType01} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.396" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.396"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.396"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.397" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.397"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.397"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.397" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.397"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.397"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.396"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.397" starttime="20140428 14:57:11.393"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Env Type02 Common Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable1Type02}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.398" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.398" starttime="20140428 14:57:11.398"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${stringVariable2Type02}</arg>
+<arg>String variable value</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.399" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.399" starttime="20140428 14:57:11.398"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem1']}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.399" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.399" starttime="20140428 14:57:11.399"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem2']}</arg>
+<arg>dictonary item 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.400" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.400" starttime="20140428 14:57:11.399"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableType02['dicItem3']}</arg>
+<arg>dictonary item 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.400" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.400" starttime="20140428 14:57:11.400"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${dictonaryVariableSingleType02[1]}</arg>
+<arg>dictonary item 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.400" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.400" starttime="20140428 14:57:11.400"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${listVariablesType02}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.401" level="INFO">Length is 3</msg>
+<status status="PASS" endtime="20140428 14:57:11.401" starttime="20140428 14:57:11.401"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{listVariablesType02} ]">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.401" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.401" starttime="20140428 14:57:11.401"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.401"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.402" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.402"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.402"></status>
+</kw>
+<kw type="foritem" name="${item} = listItem">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${item}</arg>
+<arg>listItem</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.402" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.402"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.402"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.402" starttime="20140428 14:57:11.401"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.403" starttime="20140428 14:57:11.398"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Multi Env Server Name Tests">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type02[0]}</arg>
+<arg>applicationGroup1Server2.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.404" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.404" starttime="20140428 14:57:11.403"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type02[1]}</arg>
+<arg>applicationGroup1Server1.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.404" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.404" starttime="20140428 14:57:11.404"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup2Type02[0]}</arg>
+<arg>applicationGroup1Server3.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.405" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.405" starttime="20140428 14:57:11.405"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type01[0]}</arg>
+<arg>applicationGroup1Server2.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.406" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.406" starttime="20140428 14:57:11.405"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup1Type01[1]}</arg>
+<arg>applicationGroup1Server1.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.406" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.406" starttime="20140428 14:57:11.406"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${applicationGroup2Type01[0]}</arg>
+<arg>applicationGroup1Server3.local.lan</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.407" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.407" starttime="20140428 14:57:11.406"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.407" starttime="20140428 14:57:11.403"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140428 14:57:11.407" critical="yes" starttime="20140428 14:57:11.390"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140428 14:57:11.407" starttime="20140428 14:57:11.376"></status>
+</suite>
+<suite source="/Users/julesbarnes/workspace/git/robotframework-yamlvariableslibrary/YamlVariablesLibrary/tests/acceptance/testsuites/envLevel005_-_No_env_passed.txt" id="s1-s5" name="envLevel005 - No env passed">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.412" starttime="20140428 14:57:11.412"></status>
+</kw>
+<test id="s1-s5-t1" name="envLevel005-TC1: Suite Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140428 14:57:11.413" level="INFO">/envLevel005-TC1</msg>
+<status status="PASS" endtime="20140428 14:57:11.413" starttime="20140428 14:57:11.413"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${suiteLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.414" level="FAIL">Non-existing variable '${suiteLevelString1}'.</msg>
+<status status="FAIL" endtime="20140428 14:57:11.414" starttime="20140428 14:57:11.414"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.414" critical="yes" starttime="20140428 14:57:11.413">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Non-existing variable '${suiteLevelString1}'.</status>
+</test>
+<test id="s1-s5-t2" name="envLevel005-TC2: Test Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140428 14:57:11.415" level="INFO">/envLevel005-TC2</msg>
+<status status="PASS" endtime="20140428 14:57:11.415" starttime="20140428 14:57:11.415"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.415" level="FAIL">Non-existing variable '${testLevelString1}'.</msg>
+<status status="FAIL" endtime="20140428 14:57:11.416" starttime="20140428 14:57:11.415"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.416" critical="yes" starttime="20140428 14:57:11.414">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Non-existing variable '${testLevelString1}'.</status>
+</test>
+<test id="s1-s5-t3" name="envLevel005-TC3: Service Data Level Tests">
+<kw type="setup" name="YamlVariablesLibrary.Get Data">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140428 14:57:11.417" level="INFO">/envLevel005-TC3</msg>
+<status status="PASS" endtime="20140428 14:57:11.417" starttime="20140428 14:57:11.416"></status>
+</kw>
+<kw type="kw" name="YamlVariablesLibrary.Get Data Service">
+<doc></doc>
+<arguments>
+<arg>Service Data Test</arg>
+</arguments>
+<kw type="kw" name="BuiltIn.Keyword Should Exist">
+<doc>Fails unless the given keyword exists in the current scope.</doc>
+<arguments>
+<arg>Service Data Test</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.417" starttime="20140428 14:57:11.417"></status>
+</kw>
+<kw type="kw" name="sharedTestResources.Service Data Test">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="${TEST_DATA} = Collections.Create Dictionary">
+<doc>Creates and returns a dictionary based on given items.</doc>
+<arguments>
+<arg>testValue1</arg>
+<arg>Test Value 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.418" level="INFO">${TEST_DATA} = {u'testValue1': u'Test Value 1'}</msg>
+<status status="PASS" endtime="20140428 14:57:11.418" starttime="20140428 14:57:11.418"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>testValue2</arg>
+<arg>Test Value 2</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.419" starttime="20140428 14:57:11.418"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>testValue3</arg>
+<arg>Test Value 3</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.419" starttime="20140428 14:57:11.419"></status>
+</kw>
+<kw type="kw" name="Collections.Set To Dictionary">
+<doc>Adds the given `key_value_pairs` and `items`to the `dictionary`.</doc>
+<arguments>
+<arg>${TEST_DATA}</arg>
+<arg>suiteLevelString1</arg>
+<arg>Should not be updated</arg>
+</arguments>
+<status status="PASS" endtime="20140428 14:57:11.419" starttime="20140428 14:57:11.419"></status>
+</kw>
+<status status="PASS" endtime="20140428 14:57:11.419" starttime="20140428 14:57:11.417"></status>
+</kw>
+<msg timestamp="20140428 14:57:11.419" level="INFO">${suiteLevelString1} = Should not be updated</msg>
+<msg timestamp="20140428 14:57:11.420" level="INFO">${testValue3} = Test Value 3</msg>
+<msg timestamp="20140428 14:57:11.420" level="INFO">${testValue2} = Test Value 2</msg>
+<msg timestamp="20140428 14:57:11.420" level="INFO">${testValue1} = Test Value 1</msg>
+<msg timestamp="20140428 14:57:11.420" level="INFO">[u'Service Data Test']</msg>
+<status status="PASS" endtime="20140428 14:57:11.420" starttime="20140428 14:57:11.417"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue1}</arg>
+<arg>Test Value 1</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.420" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.421" starttime="20140428 14:57:11.420"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue2}</arg>
+<arg>Test Value 2</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.421" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.421" starttime="20140428 14:57:11.421"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${testValue3}</arg>
+<arg>Test Value 3</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.421" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20140428 14:57:11.421" starttime="20140428 14:57:11.421"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${suiteLevelString1}</arg>
+<arg>test string</arg>
+</arguments>
+<msg timestamp="20140428 14:57:11.422" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20140428 14:57:11.422" level="FAIL">Should not be updated != test string</msg>
+<msg timestamp="20140428 14:57:11.422" level="DEBUG">Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/robot/libraries/BuiltIn.py", line 648, in should_be_equal_as_strings
+    self._should_be_equal(first, second, msg, values)
+  File "/Library/Python/2.7/site-packages/robot/libraries/BuiltIn.py", line 512, in _should_be_equal
+    self._include_values(values))
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 181, in fail_unless_equal
+    _report_unequality_failure(first, second, msg, values, '!=')
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 244, in _report_unequality_failure
+    _report_failure(msg)
+  File "/Library/Python/2.7/site-packages/robot/utils/asserts.py", line 230, in _report_failure
+    raise AssertionError(msg)</msg>
+<status status="FAIL" endtime="20140428 14:57:11.422" starttime="20140428 14:57:11.421"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140428 14:57:11.422" critical="yes" starttime="20140428 14:57:11.416">Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Test was expected to PASS but it FAILED. Error message:
+Should not be updated != test string</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140428 14:57:11.422" starttime="20140428 14:57:11.408"></status>
+</suite>
+<doc>YamlVariablesOutput</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140428 14:57:11.423" starttime="20140428 14:57:11.211"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="6" pass="4">Critical Tests</stat>
+<stat fail="6" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="6" pass="4" id="s1" name="Testsuites">Testsuites</stat>
+<stat fail="3" pass="1" id="s1-s1" name="envLevel001 - Single Env Input via value">Testsuites.envLevel001 - Single Env Input via value</stat>
+<stat fail="0" pass="1" id="s1-s2" name="envLevel002 - Single Env Input via variable value">Testsuites.envLevel002 - Single Env Input via variable value</stat>
+<stat fail="0" pass="1" id="s1-s3" name="envLevel003 - Multi Env Input via value">Testsuites.envLevel003 - Multi Env Input via value</stat>
+<stat fail="0" pass="1" id="s1-s4" name="envLevel004 - Multi Env Input via variable value">Testsuites.envLevel004 - Multi Env Input via variable value</stat>
+<stat fail="3" pass="0" id="s1-s5" name="envLevel005 - No env passed">Testsuites.envLevel005 - No env passed</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
